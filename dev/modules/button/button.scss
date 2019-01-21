@@ -3,27 +3,31 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5px 20px;
-	border-radius: 5px;
-	color: $base-font-color;
-	line-height: $base-font-line-height;
-	font-size: $base-font-size;
+	text-transform: uppercase;
+	width: 290px;
+	height: 70px;
+	color: #fff;
+	font-size: 20px;
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
 	transition: $base-transition;
+	line-height: $base-font-line-height;
+	border-bottom: 10px;
+	border-style: solid;
 	&.primary{
-		background-color: $second;
+		background-color: $primary;
+		border-color: darken($primary, 10%);
 		&:hover,
 		&--active {
-			background-color: darken($second, 10%)
+			border-bottom: 0;
 		}
 	}
 	&.second{
-		background-color: $sixth;
+		background-color: $second;
+		border-color: darken($second, 10%);
 		&:hover,
 		&--active {
-			background-color: darken($sixth, 10%)
+			border-bottom: 0;
 		}
 	}
-  	
 }

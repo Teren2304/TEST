@@ -1,16 +1,6 @@
-$('.slider--big').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: true,
+$('.slider').slick({
+	arrows: false,
 	fade: true,
-	asNavFor: '.slider--min'
-});
-$('.slider--min').slick({
-	slidesToScroll: 1,
-	asNavFor: '.slider--big',
-	dots: false,
-	arrows: true,
-	centerMode: true,
-	focusOnSelect: true,
-	variableWidth: true
+	autoplay: true,
+  	autoplaySpeed: 2000
 });

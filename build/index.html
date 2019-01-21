@@ -8,112 +8,89 @@
     <title>Base</title>
   </head>
   <body>
-      <div class="header background" style="background-image: url('./img/header-bg.png');">
-          <nav class="nav nav--default nav--white">
+      <div class="header background" style="background-image: url('./img/header-bg.png');" id="header">
+          <nav class="nav nav--default">
             <div class="container-fluid">
-              <div class="container nav__container">
-                <div class="flex-container align-middle align-justify"><a class="logo background" href="index.html"></a>
-                    <div class="flex-container align-middle">
-                      <menu class="menu flex-container align-middle"><a class="font menu__item" href="/rooms.html">Rooms</a><a class="font menu__item" href="/offers.html">Offers</a><a class="font menu__item" href="/blog.html">Blog</a><a class="font menu__item" href="/about.html">About us</a><a class="font menu__item" href="/contact.html">Contact</a><a class="font menu__item">Login</a>
-                      </menu>
-                      <button class="button second menu__button">Book Now</button>
-                    </div>
-                </div>
+              <div class="container flex-container align-middle align-justify nav__container"><a class="logo background" href="index.html"></a>
+                  <div class="flex-container align-middle">
+                    <menu class="menu flex-container align-middle"><a class="font text-uppercase menu__item" href="#header">home</a><a class="font text-uppercase menu__item" href="#about">about us</a><a class="font text-uppercase menu__item" href="#footer">contact</a>
+                    </menu>
+                  </div>
+                  <div class="show-menu show-menu--not-active"><span class="show-menu__item"></span><span class="show-menu__item"></span><span class="show-menu__item"></span></div>
               </div>
             </div>
           </nav>
-        <div class="container">
-          <div class="flex-container align-middle align-justify flex-wrap">
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(../img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">citrus</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">pine</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">perl</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">aqua</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">silver</p>
-                </div>
-              </div>
+        <div class="container" style="padding-top: 150px">
+          <div class="info">
+            <h2 class="fifth bold title--line info__title">We can <span>help</span></h2>
+            <p class="font fifth text-shadow info__text">Teaching independence to the lives of the people you love with reliable, individualized emotional and behavioral therapy.</p>
+            <button class="button second info__button">find help here</button>
           </div>
         </div>
       </div>
     <main class="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>1</p>
+        <section class="section section_1">
+          <div class="container">
+            <div class="partners flex-container align-middle align-justify flex-wrap"><img class="partners__item" src="./img/partner-0-bg.png"><img class="partners__item" src="./img/partner-1-bg.png"><img class="partners__item" src="./img/partner-2-bg.png"><img class="partners__item" src="./img/partner-3-bg.png"><img class="partners__item" src="./img/partner-4-bg.png"><img class="partners__item" src="./img/partner-5-bg.png">
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>2</p>
+        </section>
+        <section class="section section_2">
+          <div class="container">
+            <div class="age text-center">
+              <h2 class="fifth bold age__title">Support For People Of All Walks of Life</h2>
+              <p class="font fifth age__text">Children as young as 2 years old may begin to develop behaviors which need extra support and attention.</p><img class="age__img" src="./img/section_2-bg.png">
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>3</p>
+        </section>
+        <section class="section section_3">
+          <div class="container">
+            <div class="contact text-center">
+              <h6 class="semibold contact__title">McGrew Behavior Services Helps...</h6>
+              <p class="font contact__text">Families, organizations and health care providers in Northern California. Our knowledge and experience provide the specialized support people need when overcoming behavioral challenges.</p>
+              <button class="button second contact__button">Contact us</button>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+        <section class="section section_4 background" style="background-image: url('./img/section_4-bg.png');">
+          <div class="container">
+              <div class="slider">
+                <div class="slider__item"><img src="./img/slide-1-bg.png"></div>
+                <div class="slider__item"><img src="./img/slide-1-bg.png"></div>
+                <div class="slider__item"><img src="./img/slide-1-bg.png"></div>
+                <div class="slider__item"><img src="./img/slide-1-bg.png"></div>
+              </div>
+          </div>
+        </section>
+        <section class="section section_5" id="about">
+          <div class="container">
+            <div class="team flex-container flex-wrap">
+              <div class="team__left background"></div>
+              <div class="team__right">
+                <p class="font fifth text-cursive">Be a part of something bigger than yourself. Make a difference.</p>
+                <h2 class="fifth bold title--line">Join Our <span>Team.</span></h2>
+                <p class="font fifth">We are always looking for highly motivated individuals who aligned with our committment to making a difference in the lives of other people. Whether you’re a BCBA or interested in ABA work we are interested in talking to you!</p>
+                <button class="button primary">Find whats's available</button>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Navigation</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item"><a class="font fourth" href="#">Room</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Offers</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">About Us</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Contact</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item"><a class="font fourth" href="#">Tel: +032 2 78 34 90</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Mob: +995 598 89 23 45</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Addres: Pekini Ave 12</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Rooms</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Citrus</a><a class="font fourth" href="#">Perl</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Pine</a><a class="font fourth" href="#">Aqua</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Silver</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Fin Us on</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Airbnb.com</a><a class="font fourth" href="#">Facebook</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Booking.com</a><a class="font fourth" href="#">Instagram</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Trip Advisor</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 copyright">
-              <p class="font fourth">© 2018 aparthotel.com All Rights Reserved</p>
-            </div>
+      <div class="footer" id="footer">
+        <div class="container text-center">
+          <div class="navigation flex-container align-center-middle flex-wrap" id="footer"><a class="font text-uppercase navigation__item" href="#">home</a><a class="font text-uppercase navigation__item" href="#">about us</a><a class="font text-uppercase navigation__item" href="#">contact</a><a class="font text-uppercase navigation__item" href="#">careers</a>
+          </div>
+          <div class="square flex-container align-center-middle">
+            <div class="square__item"></div>
+            <div class="square__item"></div>
+            <div class="square__item"></div>
+          </div>
+          <div class="description">
+            <p class="font sm description__item">120 Theresa Ave, American Canyon, CA 94503</p>
+            <p class="font sm description__item">707.561.0134 </p><a class="font second description__item" href="mailto:familyresources@mbisinc.com">familyresources@mbisinc.com</a>
+          </div>
+          <div class="copyright">
+            <p class="font">Copyright Ⓒ 2017 McGrews Behavior Services All Rights Reserved</p>
           </div>
         </div>
       </div>

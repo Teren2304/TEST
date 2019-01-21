@@ -1,13 +1,10 @@
 extends ../template/template.pug
 block content
-	+header.background(style="background-image: url('./img/header-bg.png')")
+	+header.background(style="background-image: url('./img/header-bg.png')", id="header")
 	main.main
-		.container
-			.row
-				.col-12.col-sm-6.col-md-12.col-lg-12.col-xl-4
-					p 1
-				.col-12.col-sm-6.col-md-12.col-lg-12.col-xl-4
-					p 2
-				.col-12.col-sm-6.col-md-12.col-lg-12.col-xl-4
-					p 3
-	+footer
+		+section_1
+		+section_2
+		+section_3
+		+section_4.background(style="background-image: url('./img/section_4-bg.png')")
+		+section_5(id="about")
+	+footer(id="footer")

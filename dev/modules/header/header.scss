@@ -1,5 +1,15 @@
 .header{
-	height: 100vh;
-	padding-top: 100px;
-	@include shadow(rgba(0,0,0,0.2));
+	height: 660px;
+	background-size: cover;
+	.info{
+		margin-top: 50px;
+		max-width: 500px;
+		width: 100%;
+		@include media-max(768){
+			margin-top: 0;
+		}
+		&__button{
+			margin-top: 60px;
+		}
+	}
 }

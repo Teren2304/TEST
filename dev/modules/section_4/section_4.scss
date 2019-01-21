@@ -1,0 +1,10 @@
+.section_4{
+	height: 600px;
+	padding-top: 150px;
+	background-size: cover;
+	background-position: top;
+	@include media-max(769){
+		padding: 60px 0;
+		height: auto;
+	}
+}

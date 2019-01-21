@@ -1,0 +1,29 @@
+.section_5{
+	padding: 110px 0 60px 0;
+	@include media-max(768){
+		padding: 60px 0;
+	}
+	.team{
+		&__left,
+		&__right{
+			background-color: $third;
+			width: 50%;
+			padding: 30px;
+			@include media-max(768){
+				width: 100%;
+				min-height: 300px;
+				padding: 20px;
+			}
+		}
+		&__left{
+			background-size: cover;
+			background-position: top center;
+			background-image: url('../img/section_5-bg.png');
+		}
+		&__right{
+			.button{
+				margin-top: 30px;
+			}
+		}
+	}
+}

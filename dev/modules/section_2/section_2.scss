@@ -1,0 +1,16 @@
+.section_2{
+	padding-top: 80px;
+	background-color: $primary;
+	@include media-max(768){
+		padding-top: 60px;
+	}
+	.age{
+		&__title,
+		&__text{
+			margin: 20px 0;
+		}
+		&__img{
+			margin: 40px auto -10px auto;
+		}
+	}
+}

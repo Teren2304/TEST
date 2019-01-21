@@ -3,35 +3,37 @@
 .section,
 .main {
 	width: 100%;
-	margin:{
-		right: auto;
-		left: auto;
-	}
-}
-.main{
-	padding: 80px 0 30px 0;
-	&__nav{
-		margin: 0 0 25px;
-	}
-}
-.container-fluid{
-	&--primary{
-		background-color: $primary;
-	}
+	margin-right: auto;
+	margin-left: auto;
 }
 .container {
 	min-width: $min-width;
 	max-width: $max-width;
-}
-.line{
-	border: 0;
-	height: 1px;
-	background-color: #383838;
+	padding: 0 30px;
+	@include media-max(992){
+		padding: 0 15px;
+	}
+	@include media-max(576){
+		padding: 0 10px;
+	}
 }
 
-.cut{
-	display: block;
-	overflow: hidden;
-	border-radius: 5px;
-	border: 1px solid red;
+.title--line{
+	padding: 15px 0;
+	span{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -15px;
+			height: 4px;
+			background-color: $primary;
+		}
+	}
+}
+
+.text-shadow{
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
 }

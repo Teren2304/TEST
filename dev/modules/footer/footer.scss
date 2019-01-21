@@ -1,27 +1,38 @@
 .footer{
-	padding: 50px 0;
-	background-color: $third;
-	.line{
-		margin-top: 10px;
-		margin-left: 0;
-		margin-right: auto;
-		width: 55%;
-	}
-
-	.submenu{
+	border-top: 2px solid rgba(204,204,204,1);
+	.navigation{
+		padding: 45px 0;
+		@include media-max(768){
+			display: block;
+		}
 		&__item{
-			a{
-		  		min-width: 50%;
-		  		padding: 5px 0;
-		  		display: inline-block;
-		  		&:hover{
-		  			color: #fff;
-		  		}
+			margin: 0 10px;
+			@include media-max(768){
+				margin: 10px;
+				display: block;
+			}
+			&:hover,
+			&--active{
+				color: $primary;
 			}
 		}
 	}
-
+	.square{
+		&__item{
+			margin: 0 20px;
+			height: 13px;
+			width: 13px;
+			background-color: rgba(238,238,238,1);
+		}
+	}
+	.description{
+		padding: 40px 0;
+		&__item{
+			margin: 10px 0;
+		}
+	}
 	.copyright{
-		margin-top: 50px;
+		border-top: 1px solid rgba(238,238,238,1);
+		padding: 30px 0;
 	}
 }

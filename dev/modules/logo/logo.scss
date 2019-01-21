@@ -1,4 +1,9 @@
 .logo{
-	height: 40px;
-	width: 90px;
+	height: 30px;
+	width: 365px;
+	background-image: url('../img/logo-bg.png');
+	background-size: contain;
+	@include media-max(560){
+		width: 250px;
+	}
 }

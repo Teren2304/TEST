@@ -1,0 +1,40 @@
+.show-menu{
+	display: none;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	&__item{
+		position: absolute;
+		top: 50%;
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: rgba(119,119,119,1);
+		transition: all .5s;
+		&:nth-child(1){
+			margin-top: -4px;
+		}
+		&:nth-child(3){
+			margin-top: 4px;
+		}
+	}
+	&--active{
+		.show-menu__item{
+			margin: 0;
+			&:nth-child(1){
+				transform: translateY(-50%) rotateZ(45deg);
+			}
+			&:nth-child(2){
+				transform: translate(-100%);
+			}
+			&:nth-child(3){
+				transform:  translateY(-50%) rotateZ(-45deg);
+			}
+		}
+	}
+	@include media-max(992){
+		display: block;
+	}
+}

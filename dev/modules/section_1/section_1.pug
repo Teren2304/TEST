@@ -1,0 +1,7 @@
+mixin section_1(modifier)
+	section.section.section_1&attributes(attributes)
+		.container
+			.partners.flex-container.align-middle.align-justify.flex-wrap
+				-var img = [{attr: "item1"},{attr: "item2"},{attr: "item3"},{attr: "item4"},{attr: "item5"},{attr: "item6"}];
+				each item, index in img
+					img.partners__item(src="./img/partner-" +index+ "-bg.png")

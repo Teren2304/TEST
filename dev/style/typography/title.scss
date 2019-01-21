@@ -1,10 +1,10 @@
 $title-color: (
-	'primary': $primary, 
-	'fourth': $fourth
+	'second': $second,
+	'fifth': $fifth
 );
 $title-size: (
 	'1': 60px, 
-	'2': 54px,
+	'2': 48px,
 	'3': 40px,
 	'4': 36px,
 	'5': 26px,
@@ -12,8 +12,9 @@ $title-size: (
 );
 $title-weight: (
 	'light': 300, 
-	'regular': 400, 
-	'semibold': 500
+	'regular': 400,
+	'semibold': 700, 
+	'bold': 900
 );
 .h1, h1,
 .h2, h2,
@@ -25,12 +26,13 @@ $title-weight: (
 	line-height: $base-font-line-height;
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
+	text-shadow: 0px 2px 0px rgba(0,0,0,0.2);
 	@each $status, $text-color in $title-color{
 		&.#{$status}{
 			color: $text-color;
 		}
 	}
-	@each $status, $text-weight in $font-weight{
+	@each $status, $text-weight in $title-weight{
 		&.#{$status}{
 			font-weight: $text-weight;
 		}

@@ -1,0 +1,14 @@
+.section_1{
+	.partners{
+		min-height: 100px;
+		padding: 5px 0;
+		margin: 0 -15px;
+		@include media-max(768){
+			margin: 0;
+			justify-content: center;
+		}
+		&__item{
+			margin: 10px 15px;
+		}
+	}
+}

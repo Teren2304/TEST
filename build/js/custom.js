@@ -8,10 +8,19 @@ $(document).ready(function(){
 
 
 
-
-
-
-
+$('.menu__item:first-child').addClass('menu__item--active');
+$('.menu__item').click(function(event){
+	event.preventDefault();
+	var menuHeight = $('.menu').outerHeight(),
+		elementClick = $(this).attr("href"),
+		destination = $(elementClick).offset().top;
+	$('.menu').removeClass('menu--active');
+	$('.menu__item').removeClass('menu__item--active');
+	$('.show-menu').removeClass('show-menu--active');
+	$(this).addClass('menu__item--active');
+	$('html').animate({ scrollTop: destination - menuHeight }, 1100);
+	return false;
+});
 var $menu = $(".nav");
 function checkNav(){
   if ($(this).scrollTop() > 10 && $menu.hasClass("nav--default") ){
@@ -34,19 +43,20 @@ checkNav();
 
 
 
-$('.slider--big').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: true,
-	fade: true,
-	asNavFor: '.slider--min'
+$('.show-menu').click(function(){
+	var menu = $('.menu');
+	if ($(this).hasClass('show-menu--active')){
+		$(this).removeClass('show-menu--active');
+		$(menu).removeClass('menu--active');
+	}
+	else{
+		$(this).addClass('show-menu--active');
+		$(menu).addClass('menu--active');
+	}
 });
-$('.slider--min').slick({
-	slidesToScroll: 1,
-	asNavFor: '.slider--big',
-	dots: false,
-	arrows: true,
-	centerMode: true,
-	focusOnSelect: true,
-	variableWidth: true
+$('.slider').slick({
+	arrows: false,
+	fade: true,
+	autoplay: true,
+  	autoplaySpeed: 2000
 });
